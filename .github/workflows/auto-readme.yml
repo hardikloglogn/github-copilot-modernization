@@ -35,3 +35,7 @@ jobs:
           git add README1.md
 
           git diff --cached --quiet || git commit -m "Auto update README1"
+
+      - name: Push Changes
+        run: |
+          git push origin main
